@@ -17,11 +17,18 @@ if ($sliderItems->count() > 0) :
                 <?php foreach ($sliderItems as $sliderItem) :
                     $item = $sliderItem->image()->toFile();
                     $focus = $sliderItem->image()->toFile()->focus();
+                    $isCover = ($sliderItem->sizing() ?? 'cover') == 'cover';
 
                     if ($item) :
+
+                        if ($isCover) {
+                            $item = $item->resize($isPreview ? 900 : 1500, null, 80);
+                        } else {
+                            $item = $item->resize(null, null, 80);
+                        }
                 ?>
                         <li class="splide__slide">
-                            <img <?= attr(['src' => $item->url(), 'class' => ['w-full h-full', ($sliderItem->sizing() ?? 'cover') == 'cover' ? 'object-cover object-center' : 'object-contain'], 'style' => [($sliderItem->sizing() ?? 'cover') == 'cover' && $focus ? "object-position: $focus" : '']]) ?>>
+                            <img <?= attr(['src' => $item->url(), 'class' => ['w-full h-full', $isCover ? 'object-cover object-center' : 'object-contain'], 'style' => [$isCover && $focus ? "object-position: $focus" : '']]) ?>>
                         </li>
                 <?php endif;
                 endforeach; ?>

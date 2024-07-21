@@ -30,7 +30,7 @@ foreach ($projects as $project) {
 
     <div class="grid grid-cols-2 gap-2 mb-8 lg:grid-cols-1">
         <?php foreach ($projects as $project) :
-            $previewImage = $project->showImageCover()->toBool() ? $project->previewImages()?->toStructure()?->first()?->image()->toFile() : null;
+            $previewImage = $project->showImageCover()->toBool() ? $project->previewImages()?->toStructure()?->first()?->image()->toFile()->resize(700) : null;
         ?>
             <div hx-get="<?= $project->url(['params' => ['preview' => true]]) ?>" hx-target="#project-preview" hx-swap="innerHTML" <?= attr(['class' => ['bg-slate-100 dark:bg-slate-800 border border-zinc-200 dark:border-zinc-700 rounded-lg cursor-pointer overflow-hidden relative hover:-translate-y-2 transition-transform flex flex-col', $previewImage != null ? 'pt-16' : '']]) ?>>
 

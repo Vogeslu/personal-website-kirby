@@ -32,7 +32,7 @@ tabs:
             type: pages
             label: Projekte
             template: project
-            info: "{{ page.categories }}"
+            info: "{{ page.categories }} - {{ page.timespan }}"
           fields:
             fields:
               categoryOrder:
