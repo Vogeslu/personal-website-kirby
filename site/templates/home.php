@@ -29,7 +29,7 @@ $additionalLinks = $page->additionalLinks()->toStructure();
         <h2 class="text-2xl font-bold mb-3 lg:text-xl">Weitere Links</h2>
         <div class="flex items-center flex-wrap gap-4 lg:flex-col lg:items-start">
             <?php foreach ($additionalLinks as $item) : ?>
-                <a class="flex items-center gap-2 text-lg hover:text-secondary dark:hover:text-tertiary transition-colors" href="<?= $item->link()->toUrl() ?>">
+                <a class="flex items-center gap-2 text-lg hover:text-secondary dark:hover:text-tertiary transition-colors" href="<?= $item->link()->toUrl() ?>" target="_blank">
                     <i <?= attr(['class' => ['text-xl', $item->iconCategory(), $item->iconName()]]) ?>></i>
                     <span><?= $item->label() ?></span>
                 </a>
