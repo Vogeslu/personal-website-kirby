@@ -76,3 +76,7 @@ tabs:
                   link:
                     type: link
                     label: Link
+              showImageCover:
+                type: toggle
+                label: Erstes Bild als Cover anzeigen
+                default: false
