@@ -2,3 +2,10 @@ label: Slider
 type: structure
 fields:
   image: fields/image
+  sizing:
+    label: Größe
+    type: select
+    default: cover
+    options:
+      cover: Füllen (Cover)
+      contain: Beinhalten (Contain)

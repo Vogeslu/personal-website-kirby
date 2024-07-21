@@ -16,11 +16,12 @@ if ($sliderItems->count() > 0) :
             <ul <?= attr(['class' => ['splide__list', $isPreview ? '!h-[30rem] lg:!h-80' : '!h-[40rem] lg:!h-96']]) ?>>
                 <?php foreach ($sliderItems as $sliderItem) :
                     $item = $sliderItem->image()->toFile();
+                    $focus = $sliderItem->image()->toFile()->focus();
 
                     if ($item) :
                 ?>
                         <li class="splide__slide">
-                            <img src="<?= $item->url() ?>" class="w-full h-full object-cover object-center">
+                            <img <?= attr(['src' => $item->url(), 'class' => ['w-full h-full', ($sliderItem->sizing() ?? 'cover') == 'cover' ? 'object-cover object-center' : 'object-contain'], 'style' => [($sliderItem->sizing() ?? 'cover') == 'cover' && $focus ? "object-position: $focus" : '']]) ?>>
                         </li>
                 <?php endif;
                 endforeach; ?>
