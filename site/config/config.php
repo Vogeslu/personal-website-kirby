@@ -40,6 +40,7 @@ return [
 	'cache' => [
 		'pages' => [
 			'active' => json_decode(env('KIRBY_CACHE')),
+			'type' => 'static'
 		]
 	],
 	/** Build Env / Vite / etc. */

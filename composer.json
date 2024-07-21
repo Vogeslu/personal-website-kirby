@@ -31,7 +31,8 @@
 		"bnomei/kirby3-janitor": "^4.0",
 		"tobimori/kirby-tailwind-merge": "^3.0",
 		"tobimori/kirby-thumbhash": "^1.1",
-		"junohamburg/kirby-language-selector": "^1.1"
+		"junohamburg/kirby-language-selector": "^1.1",
+		"getkirby/staticache": "^1.0"
 	},
 	"config": {
 		"optimize-autoloader": true,

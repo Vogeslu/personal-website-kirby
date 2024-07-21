@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b665e1cd1f97c3246a54ac88cb0bb605",
+    "content-hash": "1b1e892a83c99433c0b8baba2237ccd3",
     "packages": [
         {
             "name": "bnomei/autoloader-for-kirby",
@@ -980,6 +980,59 @@
                 }
             ],
             "time": "2020-12-28T12:54:39+00:00"
+        },
+        {
+            "name": "getkirby/staticache",
+            "version": "1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/getkirby/staticache.git",
+                "reference": "50a49802bbbfdf230d76102b71998d3181c75b20"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/getkirby/staticache/zipball/50a49802bbbfdf230d76102b71998d3181c75b20",
+                "reference": "50a49802bbbfdf230d76102b71998d3181c75b20",
+                "shasum": ""
+            },
+            "require": {
+                "getkirby/cms": "^3.8 || ^4.0 || ^5.0",
+                "getkirby/composer-installer": "^1.2"
+            },
+            "type": "kirby-plugin",
+            "extra": {
+                "installer-name": "staticache",
+                "kirby-cms-path": false
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Bastian Allgeier",
+                    "email": "bastian@getkirby.com",
+                    "homepage": "https://getkirby.com/plugins/getkirby"
+                },
+                {
+                    "name": "Lukas Bestle",
+                    "email": "lukas@getkirby.com",
+                    "homepage": "https://getkirby.com/plugins/getkirby"
+                }
+            ],
+            "description": "Static site performance on demand",
+            "homepage": "https://getkirby.com/plugins/getkirby/staticache",
+            "support": {
+                "issues": "https://github.com/getkirby/staticache/issues",
+                "source": "https://github.com/getkirby/staticache/tree/1.0.3"
+            },
+            "funding": [
+                {
+                    "url": "https://getkirby.com/buy",
+                    "type": "custom"
+                }
+            ],
+            "time": "2024-06-29T12:43:50+00:00"
         },
         {
             "name": "graham-campbell/result-type",
