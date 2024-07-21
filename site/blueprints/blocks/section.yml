@@ -1,0 +1,15 @@
+extends: blocks/_base
+title: Absatz
+icon: title
+label: "{{ title }}"
+
+tabs:
+  content:
+    fields:
+      title:
+        label: Titel
+        type: text
+      text:
+        label: Inhalt
+        type: textarea
+        size: medium

@@ -1,0 +1,7 @@
+label: field.text.label
+type: writer
+marks:
+  - bold
+  - link
+  - email
+inline: true

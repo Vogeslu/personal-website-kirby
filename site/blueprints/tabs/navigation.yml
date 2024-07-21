@@ -1,0 +1,30 @@
+icon: bars
+label: tab.navigation.label
+columns:
+  - width: 1/4
+    fields:
+      _navigation:
+        label: field.navigation.label
+        type: headline
+  - width: 3/4
+    fields:
+      navigationPages:
+        type: pages
+        label: Darzustellende Seiten
+  - width: 1
+    fields:
+      _line1: &line
+        type: line
+  - width: 1/4
+    fields:
+      _footer:
+        label: field.footer.label
+        type: headline
+  - width: 3/4
+    fields:
+      footerCopyrightText:
+        type: text
+        label: Text Copyright
+      footerPages:
+        type: pages
+        label: Darzustellende Seiten

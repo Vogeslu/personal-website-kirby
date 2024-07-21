@@ -1,0 +1,78 @@
+extends: pages/layout
+
+title: Projekt
+image:
+  icon: template
+
+options:
+  # access
+  # changeSlug
+  # changeStatus
+  # changeTemplate
+  # changeTitle
+  # create
+  # delete
+  # duplicate
+  # list
+  # move
+  # preview
+  # sort
+  # update
+
+tabs:
+  content:
+    columns:
+      main:
+        fields:
+          previewImages: fields/image-slider
+          links:
+            type: structure
+            label: Links
+            fields:
+              iconCategory:
+                label: Font-Awesome Icon Kategorie
+                type: text
+                default: fa-solid
+              iconName:
+                label: Font-Awesome Icon Name
+                type: text
+              label:
+                label: Bezeichner (Optional)
+                type: text
+              link:
+                Label: Link
+                type: link
+      sidebar:
+        sections:
+          children: false
+          fields:
+            fields:
+              shortDescription:
+                type: textarea
+                label: Kurze Beschreibung
+                buttons: false
+              categories:
+                type: tags
+                label: Kategorien
+                options:
+                  type: query
+                  query: page.siblings.pluck("categories", ",", true)
+              tags:
+                type: tags
+                label: Tags
+                options:
+                  type: query
+                  query: page.siblings.pluck("tags", ",", true)
+              timespan:
+                type: text
+                label: Zeitraum
+              involvedPersons:
+                type: structure
+                label: Beteiligte Personen
+                fields:
+                  name:
+                    type: text
+                    label: Name
+                  link:
+                    type: link
+                    label: Link

@@ -1,0 +1,24 @@
+title: site.title
+
+tabs:
+  pages:
+    label: tab.pages.label
+    icon: page
+    columns:
+      - width: 2/3
+        sections:
+          pages:
+            label: field.pages.label
+            type: pages
+            info: "/{{ page.slug }}"
+            create:
+              - layout
+            templates:
+              - home
+              - error
+              - contact
+              - layout
+              - project-list
+            image: icon
+  navigation: tabs/navigation
+  seo: seo/site

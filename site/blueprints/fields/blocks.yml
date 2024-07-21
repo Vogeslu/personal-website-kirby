@@ -1,0 +1,4 @@
+label: field.blocks.label
+type: blocks
+fieldsets:
+  - section

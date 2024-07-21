@@ -1,0 +1,61 @@
+# ARIA
+aria.skipNavigation: Skip navigation
+
+# Social Media
+twitter: Twitter
+facebook: Facebook
+instagram: Instagram
+linkedin: LinkedIn
+youtube: YouTube
+vimeo: Vimeo
+
+# Roles
+role.admin.title: Admin
+role.admin.description: Has access to all content and administrative tools.
+role.superEditor.title: Super Editor
+role.superEditor.description: Has access to all content, but no administrative tools.
+
+# Tabs
+tab.content.label: Content
+tab.advanced.label: Advanced
+tab.grid.label: Grid view
+tab.list.label: List view
+tab.pages.label: Pages
+tab.navigation.label: Navigation & Footer
+
+# Files
+file.image.title: Image
+file.image.alt.label: Alternative text
+file.image.alt.help: The alternative text is intended to help users with visual impairments & search engine crawlers to understand the content of the image.
+file.video.title: Video
+
+# Pages
+page.layout.title: Layout page
+page.videos.title: Videos
+page.error.title: Error page
+page.home.title: Home page
+
+# Fields
+field.blocks.label: Content
+field.image.label: Image
+
+field.link.label: Link
+field.link.label.label: Label
+field.link.link.label: Link
+field.link.newTab.label: Open in new tab?
+
+field.blockId.label: Unique ID (anchor)
+
+field.pages.label: Pages
+field.text.label: Text
+
+field.navigation.label: Navigation
+field.footer.label: Footer
+
+# Sections
+section.images.label: All images
+section.videos.label: All videos
+section.children.label: Subpages
+
+# Other
+site.title: Site

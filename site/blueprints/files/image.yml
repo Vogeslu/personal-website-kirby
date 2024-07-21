@@ -1,0 +1,10 @@
+title: file.image.title
+accept:
+  extension: jpg, jpeg, png, svg
+  type: image
+
+fields:
+  alt:
+    label: file.image.alt.label
+    type: text
+    help: file.image.alt.help

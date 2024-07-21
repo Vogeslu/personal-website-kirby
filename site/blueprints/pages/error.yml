@@ -1,0 +1,4 @@
+extends: pages/home
+title: page.error.title
+image:
+  icon: cancel

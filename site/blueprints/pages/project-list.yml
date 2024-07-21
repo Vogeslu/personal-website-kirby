@@ -1,0 +1,43 @@
+extends: pages/layout
+
+title: Projekt-Liste
+image:
+  icon: tag
+
+options:
+  # access
+  # changeSlug
+  # changeStatus
+  # changeTemplate
+  # changeTitle
+  # create
+  # delete
+  # duplicate
+  # list
+  # move
+  # preview
+  # sort
+  # update
+
+tabs:
+  content:
+    columns:
+      main: false
+      sidebar: false
+
+      projects:
+        type: sections
+        sections:
+          pages:
+            type: pages
+            label: Projekte
+            template: project
+            info: "{{ page.categories }}"
+          fields:
+            fields:
+              categoryOrder:
+                type: tags
+                label: Anzuzeigende Kategorien und Reihenfolge
+                options:
+                  type: query
+                  query: page.index(true).pluck("categories", ",", true)
