@@ -39,7 +39,6 @@ if (isset($_COOKIE['darkmode'])) {
 <body class="min-h-screen antialiased overflow-x-clip dark:bg-slate-950 dark:text-slate-100">
 	<div class="min-h-screen" data-taxi>
 		<div class="flex flex-col min-h-screen" data-taxi-view>
-			<?php snippet('core/skip-nav') ?>
 			<?php snippet('core/nav') ?>
 			<main id="main" class="container flex-grow py-8 flex flex-col">
 				<?= $slot ?>
