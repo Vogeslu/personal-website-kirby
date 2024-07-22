@@ -32,8 +32,7 @@ foreach ($projects as $project) {
         <?php foreach ($projects as $project) :
             $previewImage = $project->showImageCover()->toBool() ? $project->previewImages()?->toStructure()?->first()?->image()->toFile()->resize(700) : null;
         ?>
-            <div hx-get="<?= $project->url(['params' => ['preview' => true]]) ?>" hx-target="#project-preview" hx-swap="innerHTML" <?= attr(['class' => ['bg-slate-100 dark:bg-slate-800 border border-zinc-200 dark:border-zinc-700 rounded-lg cursor-pointer overflow-hidden relative hover:-translate-y-2 transition-transform flex flex-col', $previewImage != null ? 'pt-16' : '']]) ?>>
-
+            <button hx-get="<?= $project->url(['params' => ['preview' => true]]) ?>" hx-target="#project-preview" hx-swap="innerHTML" <?= attr(['class' => ['bg-slate-100 dark:bg-slate-800 border border-zinc-200 dark:border-zinc-700 rounded-lg cursor-pointer overflow-hidden relative hover:-translate-y-2 transition-transform flex flex-col text-left', $previewImage != null ? 'pt-16' : '']]) ?>>
                 <?php if ($previewImage != null) : ?>
                     <div class="image h-52 bg-cover bg-center absolute left-0 top-0 w-full" style="background-image: url('<?= $previewImage->url() ?>')"></div>
                 <?php endif; ?>
@@ -51,7 +50,7 @@ foreach ($projects as $project) {
                         <?php endforeach; ?>
                     </div>
                 </div>
-            </div>
+            </button>
         <?php endforeach; ?>
     </div>
 <?php endforeach; ?>
