@@ -26,9 +26,9 @@ if (isset($_COOKIE['darkmode'])) {
 
 	<?php snippet('seo/head') ?>
 
-	<link rel="icon" href="/favicon.svg" />
+	<!--link rel="icon" href="/favicon.svg" />
 	<link rel="mask-icon" href="/favicon.svg" color="#000000" />
-	<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+	<link rel="apple-touch-icon" href="/apple-touch-icon.png" /-->
 	<meta name="theme-color" content="#000000">
 
 	<?= vite([
